@@ -1,0 +1,227 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "https://www.bluetooth.com/specifications/specs/mesh-cdb-1-0-1-schema.json#",
+  "version": "1.0.1",
+  "meshUUID": "89E18DEC-9846-4FA7-A252-7456B07FE928",
+  "meshName": "nRF Mesh Network",
+  "timestamp": "2025-03-23T15:08:39+00:00",
+  "partial": false,
+  "netKeys": [
+    {
+      "name": "Network Key 1",
+      "index": 0,
+      "key": "3EBD9050E1500BF4752888946409A398",
+      "phase": 0,
+      "minSecurity": "insecure",
+      "timestamp": "2025-03-23T15:08:39+00:00"
+    }
+  ],
+  "appKeys": [
+    {
+      "name": "Application Key 1",
+      "index": 0,
+      "boundNetKey": 0,
+      "key": "8090BBC4A6443EB48C0C56FAB14FF036"
+    }
+  ],
+  "provisioners": [
+    {
+      "provisionerName": "nRF Mesh Provisioner",
+      "UUID": "A877F71C-1286-4AAC-9DF0-897353D1742F",
+      "allocatedUnicastRange": [
+        {
+          "lowAddress": "0001",
+          "highAddress": "199A"
+        }
+      ],
+      "allocatedGroupRange": [
+        {
+          "lowAddress": "C000",
+          "highAddress": "CC9A"
+        }
+      ],
+      "allocatedSceneRange": [
+        {
+          "firstScene": "0001",
+          "lastScene": "3333"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "UUID": "A877F71C-1286-4AAC-9DF0-897353D1742F",
+      "name": "nRF Mesh Provisioner",
+      "deviceKey": "2A36D29A8BCE5E5844E233EE86EC0BEF",
+      "unicastAddress": "0001",
+      "security": "insecure",
+      "configComplete": false,
+      "features": {
+        "friend": 2,
+        "lowPower": 2,
+        "proxy": 2,
+        "relay": 2
+      },
+      "defaultTTL": 5,
+      "netKeys": [
+        {
+          "index": 0,
+          "updated": false
+        }
+      ],
+      "appKeys": [],
+      "elements": [
+        {
+          "name": "Element: 0x0001",
+          "index": 0,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "0001",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        }
+      ],
+      "excluded": false
+    },
+    {
+      "UUID": "E3CA0595-CC49-4BB6-9C35-FA6A33B68449",
+      "name": "relay1",
+      "deviceKey": "7D7C0165A0047E78C619B7330AA3A357",
+      "unicastAddress": "0002",
+      "security": "insecure",
+      "configComplete": false,
+      "cid": "0059",
+      "pid": "0000",
+      "vid": "0000",
+      "crpl": "000A",
+      "features": {
+        "friend": 0,
+        "lowPower": 2,
+        "proxy": 0,
+        "relay": 0
+      },
+      "defaultTTL": 7,
+      "networkTransmit": {
+        "count": 3,
+        "interval": 20
+      },
+      "netKeys": [
+        {
+          "index": 0,
+          "updated": false
+        }
+      ],
+      "appKeys": [
+        {
+          "index": 0,
+          "updated": false
+        }
+      ],
+      "elements": [
+        {
+          "name": "Element: 0x0002",
+          "index": 0,
+          "location": "0001",
+          "models": [
+            {
+              "modelId": "0000",
+              "bind": [],
+              "subscribe": []
+            },
+            {
+              "modelId": "0002",
+              "bind": [],
+              "subscribe": []
+            },
+            {
+              "modelId": "0059000A",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        }
+      ],
+      "excluded": false
+    },
+    {
+      "UUID": "67B9D123-DAC8-48F2-9846-2EDC2537070D",
+      "name": "relay2",
+      "deviceKey": "4DFA29EB24F63B29439252A775B6645A",
+      "unicastAddress": "0004",
+      "security": "insecure",
+      "configComplete": false,
+      "cid": "0059",
+      "pid": "0000",
+      "vid": "0000",
+      "crpl": "000A",
+      "features": {
+        "friend": 0,
+        "lowPower": 2,
+        "proxy": 0,
+        "relay": 0
+      },
+      "defaultTTL": 7,
+      "networkTransmit": {
+        "count": 3,
+        "interval": 20
+      },
+      "netKeys": [
+        {
+          "index": 0,
+          "updated": false
+        }
+      ],
+      "appKeys": [
+        {
+          "index": 0,
+          "updated": false
+        }
+      ],
+      "elements": [
+        {
+          "name": "Element: 0x0004",
+          "index": 0,
+          "location": "0001",
+          "models": [
+            {
+              "modelId": "0000",
+              "bind": [],
+              "subscribe": []
+            },
+            {
+              "modelId": "0002",
+              "bind": [],
+              "subscribe": []
+            },
+            {
+              "modelId": "0059000A",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        }
+      ],
+      "excluded": false
+    }
+  ],
+  "groups": [
+    {
+      "name": "Mesh Group",
+      "address": "C000",
+      "parentAddress": "0000"
+    }
+  ],
+  "scenes": [],
+  "networkExclusions": [
+    {
+      "ivIndex": 0,
+      "addresses": [
+        "0002",
+        "0003"
+      ]
+    }
+  ]
+}
