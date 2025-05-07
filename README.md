@@ -5,7 +5,7 @@ This repository contains:
 - **MeshMessagingApp** — An Android application that enables messaging over Bluetooth Mesh.
 - **nRF Firmware** — Custom firmware that must be flashed onto Nordic Semiconductor nRF52840 Development Kits (DKs) to relay messages through a Bluetooth Mesh network.
 
-## 🟢 MeshMessagingApp
+## MeshMessagingApp
 
 The **MeshMessagingApp** is a Bluetooth Mesh chat application for Android.  
 It can be run as a project directly through **Android Studio**.
@@ -16,7 +16,7 @@ It can be run as a project directly through **Android Studio**.
 3. Build and deploy the app to an Android device running Android 8.0 (API level 26) or higher.
 4. Make sure the Android device has Bluetooth enabled.
 
-## 🔵 nRF Firmware
+## nRF Firmware
 
 The `nRF Firmware` folder contains firmware for the **Bluetooth Mesh Chat Client** designed for the nRF52840 DK.
 
