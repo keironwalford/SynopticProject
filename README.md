@@ -23,8 +23,6 @@ The `nRF Firmware` folder contains firmware for the **Bluetooth Mesh Chat Client
 The firmware includes:
 - Mesh provisioning
 - Message relaying
-- Presence management
-- Basic health server for node monitoring
 
 ### Flashing Instructions:
 1. Install **nRF Connect for Desktop** and add the **Programmer** app.
@@ -32,11 +30,3 @@ The firmware includes:
 3. Connect your nRF52840 DK via USB.
 4. Open the **Programmer** app.
 5. Select the connected device and flash the compiled HEX file.
-
-### Notes:
-- The firmware is built using **Zephyr RTOS** via the nRF Connect SDK.
-- Mesh configuration can be customized through the `prj.conf` and `sample.yaml` files.
-- Uses standard Nordic Mesh models with custom Chat Client functionality.
-
-## 📝 Repository Structure
-
