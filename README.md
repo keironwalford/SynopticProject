@@ -7,8 +7,8 @@ This repository contains:
 
 ## MeshMessagingApp
 
-The **MeshMessagingApp** is a Bluetooth Mesh chat application for Android.  
-It can be run as a project directly through **Android Studio**.
+The MeshMessagingApp is a Bluetooth Mesh chat application for Android.  
+It can be run as a project directly through Android Studio.
 
 ### To run:
 1. Clone this repository.
@@ -18,15 +18,15 @@ It can be run as a project directly through **Android Studio**.
 
 ## nRF Firmware
 
-The `nRF Firmware` folder contains firmware for the **Bluetooth Mesh Chat Client** designed for the nRF52840 DK.
+The `nRF Firmware` folder contains firmware for the Bluetooth Mesh Chat Client designed for the nRF52840 DK.
 
 The firmware includes:
 - Mesh provisioning
 - Message relaying
 
 ### Flashing Instructions:
-1. Install **nRF Connect for Desktop** and add the **Programmer** app.
-2. Compile the firmware using **nRF Connect SDK** or use pre-built HEX files (if provided).
+1. Install nRF Connect for Desktop and add the Programmer app.
+2. Compile the firmware using nRF Connect SDK or use pre-built HEX files (if provided).
 3. Connect your nRF52840 DK via USB.
-4. Open the **Programmer** app.
+4. Open the Programmer app.
 5. Select the connected device and flash the compiled HEX file.
