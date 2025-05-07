@@ -26,7 +26,7 @@ The firmware includes:
 
 ### Flashing Instructions:
 1. Install nRF Connect for Desktop and add the Programmer app.
-2. Compile the firmware using nRF Connect SDK or use pre-built HEX files (if provided).
+2. Compile the firmware using nRF Connect SDK.
 3. Connect your nRF52840 DK via USB.
 4. Open the Programmer app.
 5. Select the connected device and flash the compiled HEX file.
